@@ -1,0 +1,25 @@
+# OS
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+npm-debug.log*
+
+# Optional: uncomment to ignore node_modules if you add tooling later
+# node_modules/
+
+# Large files - exceed GitHub 100MB limit
+assets/video/Årets Flirt.mp4
+assets/video/aretsflirt.mp4.mp4
+
+# Git installer (accidentally in assets)
+assets/background/Git-2.53.0-64-bit*.exe

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="assets/ting/j.svg" />
+    <link rel="apple-touch-icon" href="assets/ting/j.svg" />
+    <title>Project — Portfolio</title>
+    <link rel="stylesheet" href="https://use.typekit.net/cgn1ray.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <a href="index.html" class="back-link">← Tilbage til akvariet</a>
+      <div class="page-overlay">
+      <div id="project-body">
+        <h1 id="project-title">Project</h1>
+        <div id="project-description">
+          <p>Project description will load here based on the link.</p>
+        </div>
+      </div>
+      </div>
+      <script>
+        (function () {
+          var params = new URLSearchParams(window.location.search);
+          var slug = params.keys().next().value || "";
+          if (slug === "hospital-clowns") {
+            document.getElementById("project-title").innerHTML =
+              "<span class=\"project-title-with-logo\"><img src=\"assets/ting/yccalogo.png\" alt=\"YCCA logo\" class=\"project-title-logo\" />YCCA 25</span>";
+            var projectBody = document.getElementById("project-body");
+            if (projectBody) {
+              projectBody.style.maxWidth = "85ch";
+              projectBody.classList.add("project-hospital-clowns");
+            }
+            var overlayEl = document.querySelector(".page-overlay");
+            if (overlayEl) {
+              overlayEl.style.maxWidth = "calc(130ch + 5rem)";
+            }
+            document.getElementById("project-description").innerHTML =
+              "<div class=\"case-divider\"><img src=\"assets/ting/dhklogo.png\" alt=\"\" class=\"case-divider-img\" /></div>" +
+              "<section class=\"case-media\">" +
+              "<div class=\"case-print\">" +
+              "<h2>Print</h2>" +
+              "<img src=\"assets/video/bipbip.png\" alt=\"Print\" class=\"case-print-img\" />" +
+              "<img src=\"assets/ting/yccashort.png\" class=\"case-stamp\" alt=\"Shortlisted\" />" +
+              "</div>" +
+              "<h2>Videos</h2>" +
+              "<div class=\"case-videos\">" +
+              "<div class=\"case-video\"><video controls preload=\"metadata\" playsinline class=\"case-video-player\"><source src=\"assets/video/dhkvideo.mp4\" type=\"video/mp4\"></video><img src=\"assets/ting/yccashort.png\" class=\"case-stamp\" alt=\"Shortlisted\" /></div>" +
+              "<div class=\"case-video\"><video controls preload=\"metadata\" playsinline class=\"case-video-player\"><source src=\"assets/video/jveh2.mp4\" type=\"video/mp4\"></video><img src=\"assets/ting/yccashort.png\" class=\"case-stamp\" alt=\"Shortlisted\" /></div>" +
+              "</div>" +
+              "</section>" +
+              "<p class=\"case-credit\">Lavet med Kamma Bro Jørgensen</p>";
+          } else if (slug === "project-b") {
+            document.getElementById("project-title").textContent = "Trivial Pursuit";
+            var projectBody = document.getElementById("project-body");
+            if (projectBody) {
+              projectBody.style.maxWidth = "100ch";
+            }
+            var overlayEl = document.querySelector(".page-overlay");
+            if (overlayEl) {
+              overlayEl.style.maxWidth = "calc(100ch + 5rem)";
+            }
+            document.getElementById("project-description").innerHTML =
+              "<div class=\"case-trivial\">" +
+              "<img src=\"assets/ting/trivial.png\" alt=\"\" class=\"case-trivial-img\" />" +
+              "<div class=\"case-trivial-text\">" +
+              "<p><strong>En integreret kampagne for brætspillet Trivial Pursuit Classic Edition.</strong></p>" +
+              "<p><strong>Brief:</strong><br>Som en modvægt til Google-effekten sigter vi mod at gøre folk opmærksomme på, at oplevelser og nysgerrighed er mere berigende for læring.</p>" +
+              "<p><strong>Løsning:</strong> <em>The game you always prepare for</em><br>Vi ville strategisk placere billboards med Trivial Pursuit-spørgsmål relateret til den begivenhed, placering eller situation, du befinder dig i. Vi ville bruge omgivelserne og miljøet til at give vores prints en kreativ kontekst og gøre folk opmærksomme på, hvordan Trivial Pursuit er det spil, man altid forbereder sig på.</p>" +
+              "<p>Lavet i samarbejde med Marie Juul Neiiendam og Lea Lochmann</p>" +
+              "</div>" +
+              "</div>" +
+              "<section class=\"case-media case-media-overlay\">" +
+              "<h2>OUTDOOR</h2>" +
+              "<div class=\"case-ost-grid\">" +
+              "<img src=\"assets/ting/blaost.png\" alt=\"\" class=\"case-ost-img\" />" +
+              "<img src=\"assets/ting/pinkost.png\" alt=\"\" class=\"case-ost-img\" />" +
+              "<img src=\"assets/ting/gulost.png\" alt=\"\" class=\"case-ost-img\" />" +
+              "<img src=\"assets/ting/orangeost.png\" alt=\"\" class=\"case-ost-img\" />" +
+              "<img src=\"assets/ting/lillaost.png\" alt=\"\" class=\"case-ost-img\" />" +
+              "<img src=\"assets/ting/gronost.png\" alt=\"\" class=\"case-ost-img\" />" +
+              "</div>" +
+              "<h2>SoME</h2>" +
+              "<div class=\"case-some\">" +
+              "<img src=\"assets/ting/some.png\" alt=\"\" class=\"case-some-img\" />" +
+              "<img src=\"assets/ting/computer.png\" alt=\"\" class=\"case-some-img case-computer-img\" />" +
+              "</div>" +
+              "<h2>ACTIVATION</h2>" +
+              "<div class=\"case-activation\">" +
+              "<img src=\"assets/ting/flerekort.png\" alt=\"\" class=\"case-activation-img\" />" +
+              "<img src=\"assets/ting/korbag.png\" alt=\"\" class=\"case-activation-img case-activation-img-korbag\" />" +
+              "<img src=\"assets/ting/mus.png\" alt=\"\" class=\"case-activation-img\" />" +
+              "<img src=\"assets/ting/fod.png\" alt=\"\" class=\"case-activation-img case-activation-img-fod\" />" +
+              "<img src=\"assets/ting/heart.png\" alt=\"\" class=\"case-activation-img\" />" +
+              "<img src=\"assets/ting/kortposer.png\" alt=\"\" class=\"case-activation-img\" />" +
+              "</div>" +
+              "</section>";
+          } else if (slug === "project-c") {
+            document.getElementById("project-title").textContent = "Børns Voksenvenner";
+            var projectBody = document.getElementById("project-body");
+            if (projectBody) {
+              projectBody.style.maxWidth = "85ch";
+            }
+            var overlayEl = document.querySelector(".page-overlay");
+            if (overlayEl) {
+              overlayEl.style.maxWidth = "calc(130ch + 5rem)";
+            }
+            document.getElementById("project-description").innerHTML =
+              "<div class=\"case-bv-logo\">" +
+              "<img src=\"assets/ting/bvlogo.png\" alt=\"\" class=\"case-bv-logo-img\" />" +
+              "<div class=\"case-bv-logo-text\">" +
+              "<p>Børns Voksenvenner er en frivillig organisation, der matcher børn med voksne frivillige i trygge venskaber.</p>" +
+              "<p>Kampagnen blev udviklet pro bono med det formål at øge kendskabet til foreningen og rekruttere flere voksenvenner.</p>" +
+              "<p>Indsatsen skabte øget opmærksomhed omkring organisationens arbejde og resulterede i en markant stigning i interessen for at blive frivillig.</p>" +
+              "<p>Lavet i samarbejde med Marketsquare og Kamma Bro Jørgensen</p>" +
+              "</div>" +
+              "</div>" +
+              "<section class=\"case-media\">" +
+              "<div class=\"case-videos\">" +
+              "<div class=\"case-video\"><video controls preload=\"metadata\" playsinline class=\"case-video-player case-video-player-bv\"><source src=\"assets/video/dilb2.mp4\" type=\"video/mp4\"></video></div>" +
+              "<div class=\"case-video\"><video controls preload=\"metadata\" playsinline class=\"case-video-player case-video-player-bv\"><source src=\"assets/video/dilb1.mp4\" type=\"video/mp4\"></video></div>" +
+              "<div class=\"case-video\"><video controls preload=\"metadata\" playsinline class=\"case-video-player case-video-player-bv\"><source src=\"assets/video/dilb3.mp4\" type=\"video/mp4\"></video></div>" +
+              "</div>" +
+              "<div class=\"case-bv-images\">" +
+              "<img src=\"assets/ting/tale.png\" alt=\"\" class=\"case-bv-img case-bv-img-tale\" />" +
+              "<img src=\"assets/ting/klis.png\" alt=\"\" class=\"case-bv-img case-bv-img-klis\" />" +
+              "</div>" +
+              "</section>" +
+              "<div class=\"page-bottom-imgs\">" +
+              "<img src=\"assets/ting/hin.png\" alt=\"\" class=\"page-bottom-img page-bottom-img-hin\" />" +
+              "<img src=\"assets/ting/cen.png\" alt=\"\" class=\"page-bottom-img page-bottom-img-cen\" />" +
+              "</div>";
+          } else if (slug === "so-fish") {
+            document.getElementById("project-title").textContent = "SoMe Content";
+            document.getElementById("project-description").innerHTML =
+              "<div class=\"case-so-row\">" +
+              "<div class=\"case-so-text\">" +
+              "<p>Jeg har udviklet og produceret SoMe content for en række brands, bl.a. Toyota, Lexus, CPH Lufthavn, Danske Shoppingcentre og Honda.</p>" +
+              "<p>Heriblandt denne reel for Toyota.</p>" +
+              "<p>Lavet med Kamma Bro Jørgensen.</p>" +
+              "</div>" +
+              "<div class=\"case-video\"><video controls preload=\"auto\" playsinline autoplay muted class=\"case-video-player case-video-player-so\"><source src=\"assets/video/toso.mp4\" type=\"video/mp4\"></video></div>" +
+              "</div>";
+          } else if (slug === "arets-flirt" || slug === "pink-fish") {
+            document.getElementById("project-title").textContent = "Årets Flirt - Kortfilm";
+            var projectBody = document.getElementById("project-body");
+            if (projectBody) {
+              projectBody.style.maxWidth = "156ch";
+            }
+            var overlayEl = document.querySelector(".page-overlay");
+            if (overlayEl) {
+              overlayEl.style.maxWidth = "calc(156ch + 5rem)";
+            }
+            document.getElementById("project-description").innerHTML =
+              "<div class=\"case-text-with-ekko\">" +
+              "<div class=\"case-text-block\">" +
+              "<p>Veninderne Luna og Emma har været til galla på skolen og er på vej videre til fest, da en tilsyneladende uskyldig samtale udvikler sig til en større konflikt. Usagte følelser og stærke holdninger kommer op til overfladen og sætter deres venskab på spil.</p>" +
+              "<p>På filmen arbejdede jeg som fotograf med ansvar for det visuelle udtryk og den stemningsbærende billedside.</p>" +
+              "<p>Filmen blev nomineret til Ekko Shortlist Awards 2021 i kategorierne Shortlist Prisen og Publikum Prisen. Kortfilmen blev senere anvendt som undervisningsmateriale i folkeskolen og brugt som afsæt for dialogbaseret undervisning om venskab, sociale normer og følelsesmæssige konflikter blandt unge.</p>" +
+              "</div>" +
+              "<img src=\"assets/ting/ekko.png\" alt=\"Ekko Shortlist\" class=\"case-ekko-logo\" />" +
+              "</div>" +
+              "<div class=\"case-video case-video-aretsflirt\">" +
+              "<div class=\"case-video-thumb-wrap\" id=\"aretsflirt-thumb-wrap\" role=\"button\" tabindex=\"0\" aria-label=\"Afspil Årets Flirt video\">" +
+              "<img src=\"assets/ting/af.png\" alt=\"Årets Flirt - klik for at afspille\" class=\"case-video-thumbnail\" id=\"aretsflirt-thumbnail\">" +
+              "<span class=\"case-video-play-icon\" id=\"aretsflirt-play-icon\" aria-hidden=\"true\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M8 5v14l11-7z\"/></svg></span>" +
+              "<div class=\"case-video-embed-container\" id=\"aretsflirt-embed\"></div>" +
+              "</div></div>";
+            var thumbWrap = document.getElementById("aretsflirt-thumb-wrap");
+            var thumb = document.getElementById("aretsflirt-thumbnail");
+            var playIcon = document.getElementById("aretsflirt-play-icon");
+            var embedContainer = document.getElementById("aretsflirt-embed");
+            if (thumbWrap && embedContainer) {
+              var loadVimeo = function () {
+                thumb.classList.add("hidden");
+                if (playIcon) playIcon.classList.add("hidden");
+                thumbWrap.removeAttribute("role");
+                thumbWrap.removeAttribute("tabindex");
+                thumbWrap.style.cursor = "default";
+                var iframe = document.createElement("iframe");
+                iframe.src = "https://player.vimeo.com/video/1166019343?autoplay=1&muted=0";
+                iframe.className = "case-video-vimeo";
+                iframe.title = "Årets Flirt - Vimeo video";
+                embedContainer.appendChild(iframe);
+                thumbWrap.removeEventListener("click", loadVimeo);
+                thumbWrap.removeEventListener("keydown", keyHandler);
+              };
+              var keyHandler = function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); loadVimeo(); } };
+              thumbWrap.addEventListener("click", loadVimeo);
+              thumbWrap.addEventListener("keydown", keyHandler);
+            }
+          }
+        })();
+      </script>
+    </div>
+  </body>
+</html>
